@@ -1,0 +1,74 @@
+@import url('./reset.css');
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  --color--primary: hsla(20, 100%, 98%);
+  --color--secondary: 	hsl(357, 95%, 85%);
+  --color--third: hsl(38, 100%, 90%);
+  --color--text1: hsl(354, 12%, 16%);
+  --color--text2: hsl(8, 8%, 37%);
+  --color--button: 	hsl(357, 95%, 85%);
+}
+
+
+
+
+body {
+  background-image: linear-gradient( 90.6deg, var(--color--primary) 59.3%, hsla(357, 100%, 91%, 0.479) 91.1% );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  color: var(--color--text2);
+  background: transparent;
+  border: 2px solid var(--color--button);
+  padding: .5em .6em;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.5s ease-out;
+}
+
+.btn::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -7.45em;
+  transition: box-shadow .5s ease-out;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: var(--color--text1);
+  border: 2px solid var(--color--button);
+  box-shadow:  5px 5px 15px #b0aba9,
+              -5px -5px 15px #ffffff;
+  transition: all .5s ease-out;
+}
+
+.btn:hover::before {
+  box-shadow: inset 0 0 0 10em var(--color--button);
+}
+.btn:active {
+  transform: translateY(.8rem);
+  transition: .2s;
+}
+
+
