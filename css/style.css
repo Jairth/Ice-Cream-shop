@@ -1,41 +1,76 @@
 @import url('./reset.css');
+@import url('./header.css');
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
+html {
+  font-size: 10px;
+}
+
 :root {
   --color--primary: hsla(20, 100%, 98%);
-  --color--secondary: 	hsl(357, 95%, 85%);
+  --color--secondary: 	hsl(27, 100%, 91%);
   --color--third: hsl(38, 100%, 90%);
   --color--text1: hsl(354, 12%, 16%);
   --color--text2: hsl(8, 8%, 37%);
+  --lightGreen-1: 	hsl(128, 22%, 87%);
+  --lightGreen-2: 	hsl(113, 57%, 97%);
   --color--button: 	hsl(357, 95%, 85%);
 }
 
 
-
-
 body {
   background-image: linear-gradient( 90.6deg, var(--color--primary) 59.3%, hsla(357, 100%, 91%, 0.479) 91.1% );
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow-x: hidden;
 }
 
+section {
+  padding: 6.25em 0;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 3.125em 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4em;
+}
 
 .btn {
   position: relative;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 600;
 
   color: var(--color--text2);
   background: transparent;
   border: 2px solid var(--color--button);
-  padding: .5em .6em;
+  padding: .8em .6em;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  transition: color 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .btn::before {
@@ -58,8 +93,8 @@ body {
 .btn:hover {
   color: var(--color--text1);
   border: 2px solid var(--color--button);
-  box-shadow:  5px 5px 15px #b0aba9,
-              -5px -5px 15px #ffffff;
+  box-shadow:  5px 5px 15px	hsl(17, 4%, 68%),
+              -5px -5px 15px 	hsl(0, 0%, 100%);
   transition: all .5s ease-out;
 }
 
@@ -69,6 +104,13 @@ body {
 .btn:active {
   transform: translateY(.8rem);
   transition: .2s;
+}
+
+@media screen and (max-width: 840px) {
+  .btn {
+    background: var(--color--button);
+    color: var(--color--text1)
+  }
 }
 
 
