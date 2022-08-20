@@ -70,7 +70,7 @@ p {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn::before {
@@ -86,7 +86,7 @@ p {
   width: 20em;
   height: 20em;
   left: -7.45em;
-  transition: box-shadow .5s ease-out;
+  transition: box-shadow .5s ease-in-out;
   z-index: -1;
 }
 
@@ -95,7 +95,7 @@ p {
   border: 2px solid var(--color--button);
   box-shadow:  5px 5px 15px	hsl(17, 4%, 68%),
               -5px -5px 15px 	hsl(0, 0%, 100%);
-  transition: all .5s ease-out;
+  transition: all .5s ease-in-out;
 }
 
 .btn:hover::before {
