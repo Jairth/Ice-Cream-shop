@@ -1,5 +1,6 @@
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./footer.css');
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -35,7 +36,7 @@ section {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 90%;
   margin: 0 auto;
 }
