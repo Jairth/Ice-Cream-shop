@@ -1,6 +1,8 @@
 const navIcon = document.querySelector('.nav__icon');
-const navCloseEl = document.querySelector('.nav__close')
+const navCloseEl = document.querySelector('.nav__close');
 const navList = document.querySelector('.nav__list');
+const $form = document.querySelector('form');
+const send = document.querySelector('#enviar');
 
 const navOpen = () => {
   navList.classList.add('show');
@@ -14,3 +16,14 @@ const navClose = () => {
 
 navIcon.addEventListener('click', navOpen);
 navCloseEl.addEventListener('click', navClose);
+
+
+
+
+function handleSubmit (e) {
+  e.preventDefault()
+  const form = new FormData(this) 
+  
+}
+
+$form.addEventListener('submit', handleSubmit)
