@@ -1,0 +1,78 @@
+/* CONTACT | ORDERS*/
+
+.form {
+  margin: 5em 0;
+}
+
+.form__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color--text1);
+}
+
+.form__wrapper {
+  padding: 3em 0;
+}
+
+.form__wrapper form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.form__group label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color--text2);
+}
+
+.form__group input, .form__group textarea, .form__group select {
+  width: 100%;
+  border: none;
+  background-color: var(--color--secondary);
+  color: var(--color--text2);
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.2em;
+  border-radius: 8px;
+  margin-top: .5em;
+}
+
+.form__group textarea {
+  resize: vertical;
+}
+
+.form__wrapper button[type='submit'] {
+  width: max-content;
+  border: none;
+  padding: .5em 1.5em;
+
+  font-weight: 600;
+  letter-spacing: .1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .form__title {
+    font-size: 3.6rem;
+  }
+
+  .form__wrapper {
+    padding: 5em 0;
+  }
+
+  .form__wrapper form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__group-full {
+    grid-column: 1/3;
+  }
+
+  .form__group input, .form__group textarea, .form__group select {
+    font-size: 1.8rem;
+    padding: 1em;
+    margin-top: .8em;
+  }
+
+}

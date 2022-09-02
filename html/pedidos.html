@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedidos</title>
+  <title>Pedidos | Dolce Placer</title>
   <link rel="stylesheet" href="../css/style.css">
   <script defer src="../js/main.js"></script>
 </head>
@@ -48,6 +48,63 @@
       </div>
     </div>
   </header>
+
+  <section class="form">
+    <div class="container">
+      <h3 class="form__title">Reservas</h3>
+      <div class="form__wrapper">
+        <form>
+          <div class="form__group">
+            <label for="firstName">Nombres</label>
+            <input type="text" name="first_name" id="firstName">
+          </div>
+          <div class="form__group">
+            <label for="lastName">Apellidos</label>
+            <input type="text" name="last_name" id="lastName">
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div class="form__group">
+            <label for="tableType">Mesa para</label>
+            <select name="table_type" id="tableType" required>
+              <option selected disabled>Elegir</option>
+              <option value="small">Mesa pequeña (2 - 4 personas)</option>
+              <option value="medium">Mesa mediana (4 - 8 personas)</option>
+              <option value="large">Mesa grande (8 - 12 personas)</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="numInvitados">Número de invitados</label>
+            <input type="text" name="num_invitados" id="numInvitados" min="1" max="12" required>
+          </div>
+          <div class="form__group">
+            <label for="Lugar">Lugar</label>
+            <select name="lugar" id="Lugar" required>
+              <option selected disabled>Elegir</option>
+              <option value="outdoor">Exterior</option>
+              <option value="indoor">Interior</option>
+              <option value="rooftop">Segundo Piso</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="date">Fecha</label>
+            <input type="date" name="date" id="date" required>
+          </div>
+          <div class="form__group">
+            <label for="time">Hora</label>
+            <input type="time" name="time" id="time" required>
+          </div>
+          <div class="form__group form__group-full">
+            <label for="message">Nota</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn form__activo">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">

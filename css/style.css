@@ -2,6 +2,9 @@
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./main.css');
+@import url('./letter.css');
+@import url('./history.css');
+@import url('./contact.css');
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
@@ -15,8 +18,6 @@ html {
   --color--third: hsl(38, 100%, 90%);
   --color--text1: hsl(354, 12%, 16%);
   --color--text2: hsl(8, 8%, 37%);
-  --lightGreen-1: 	hsl(128, 22%, 87%);
-  --lightGreen-2: 	hsl(113, 57%, 97%);
   --color--button: 	hsl(357, 95%, 85%);
 }
 
@@ -24,6 +25,16 @@ html {
 body {
   background-image: linear-gradient( 90.6deg, var(--color--primary) 59.3%, hsla(357, 100%, 91%, 0.479) 91.1% );
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;
+  background: hsla(357, 95%, 85%, 0.568);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(357, 79%, 77%);
+  border-radius: 12px;
 }
 
 section {
@@ -116,6 +127,13 @@ p {
 
   .btn:active {
     transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .form__activo {
+    background: var(--color--button);
+    color: var(--color--text1)
   }
 }
 
