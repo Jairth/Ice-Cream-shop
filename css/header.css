@@ -98,9 +98,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    z-index: 1;
+    z-index: 5;
     clip-path: circle(0.3% at 100% 0);
-    transition: all .6s ease-out;
+    transition: all .5s ease-out;
   }
 
   .nav__list.show {
